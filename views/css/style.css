@@ -1,0 +1,61 @@
+body {
+    background-image: url('../images/background.jpg');
+
+    src: 
+        url('FantasqueSansMono-Bold.woff2') format('woff2'),
+        url('FantasqueSansMono-Bold.woff') format('woff'),
+        url('FantasqueSansMono-Bold.ttf') format('truetype'),
+        url('FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg');
+
+    font-family: 'Fantasque Sans Mono';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70%;
+
+}
+
+.window {
+    text-align: center;
+    background-color: #FFD1DC;
+
+    width: 45%;
+    height: 80vh;
+    margin: auto;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid #111;
+    box-shadow: 1px 2px #111, inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #999;
+}
+
+.window-title {
+    background-image: url('../images/title-strip.jpg');
+    background-position: 10% 60%;
+    background-repeat: repeat-x repeat-y;
+    margin: 0;
+    
+    font-size: 1.1rem;
+
+    text-align: center;
+
+    border-bottom: 1px solid #111;
+    border-top: 1px solid #111;
+}
+
+.window-title ::before,
+.window-title ::after { content: ""; background-color: #ccc; }
+
+.window-content {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.name {
+    padding-top: 10%;
+}
+
+hr { width: 90%; }
